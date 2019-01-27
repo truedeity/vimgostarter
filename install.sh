@@ -52,7 +52,7 @@ install_vim() {
     # Plugin manager bootstrap
     mkdir -p ~/.vim/{autoload,bundle,colors,scripts}
     wget -P ~/.vim/autoload "https://tpo.pe/pathogen.vim"
-    wget -P ~/.vim/colors "https://raw.githubusercontent.com/xlucas/go-vim-install/master/molokai.vim"
+    wget -P ~/.vim/colors "https://raw.githubusercontent.com/fatih/molokai/master/colors/molokai.vim"
 
     # Clone necessary stuff
     for repository in ${repositories[@]} ; do
