@@ -121,11 +121,20 @@ install_ws() {
     exit 0
 }
 
+
+prefab() {
+    curl -s "https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz" | sudo tar -C /usr/local -xzvf -
+    echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
+    install_vim()
+    exit 0
+}
+
 # Main
 case $1 in
 "-go")    install_go  $2;;
 "-vim")   install_vim $2;;
 "-work")  install_ws  $2;;
+"-prefab")  prefab  $2;;
 esac
 
 echo "Usage : $0 OPTION"
