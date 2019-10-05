@@ -60,8 +60,8 @@ install_vim() {
     done
 
     # Closetag script and snippets
-    curl -sL -o ~/.vim/scripts/closetag.vim "http://vim.sourceforge.net/scripts/download_script.php?src_id=4318"
-    wget -P ~/.vim/bundle/vim-go/gosnippets/UltiSnips "https://raw.githubusercontent.com/xlucas/go-vim-install/master/go.snippets"
+    curl -sL -o ~/.vim/scripts/closetag.vim "https://raw.githubusercontent.com/docunext/closetag.vim/master/plugin/closetag.vim"
+    wget -P ~/.vim/bundle/vim-go/gosnippets/UltiSnips "https://raw.githubusercontent.com/fatih/vim-go/master/gosnippets/UltiSnips/go.snippets"
 
     # YCM compilation
     cd ~/.vim/bundle/YouCompleteMe && {
@@ -83,7 +83,7 @@ install_vim() {
     sudo npm -g install instant-markdown-d
 
     # Vimrc
-    wget -P ~ "https://raw.githubusercontent.com/xlucas/go-vim-install/master/.vimrc"
+    # wget -P ~ "https://raw.githubusercontent.com/xlucas/go-vim-install/master/.vimrc"
 
     # Path
     echo "export PATH=\$PATH:$(readlink -f ~/.local/bin)" >> ~/.profile
