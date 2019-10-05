@@ -43,6 +43,12 @@ install_vim() {
         airblade/vim-gitgutter
     )
 
+    #install phython-pip
+    sudo apt-get install software-properties-common
+    sudo apt-add-repository universe
+    sudo apt-get update
+    sudo apt-get install python-pip
+    
     # Backup
     cp -f ~/.vimrc ~/.vimrc.old.$(date +%s)
 
