@@ -2,7 +2,7 @@
 
 ```
 git clone https://github.com/truedeity/vimgostarter.git
-mv vimgostarter/* .
+mv vimgostarter/{.,}* .
 cp vice.vim ~/.vim/colors/vice.vim
 
 chmod +x install.sh
