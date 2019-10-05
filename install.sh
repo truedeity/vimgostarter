@@ -62,6 +62,8 @@ install_vim() {
     mkdir -p ~/.vim/{autoload,bundle,colors,scripts}
     wget -P ~/.vim/autoload "https://tpo.pe/pathogen.vim"
     wget -P ~/.vim/colors "https://raw.githubusercontent.com/fatih/molokai/master/colors/molokai.vim"
+    wget -P ~/.vim/colors "https://raw.githubusercontent.com/bcicen/vim-vice/master/colors/vice.vim"
+
 
     # Clone necessary stuff
     for repository in ${repositories[@]} ; do
