@@ -10,8 +10,9 @@ mv vimgostarter/{.,}* .
 chmod +x install.sh
 sudo ./install.sh -go https://dl.google.com/go/go1.13.1.linux-amd64.tar.gz
 sudo ./install.sh -vim
-cp vice.vim ~/.vim/colors/vice.vim
-cd ~
+sudo ./install.sh -work ~/go
 rm -rf vimgostarter
+cd ~
+
 ```
 
