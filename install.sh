@@ -49,6 +49,9 @@ install_vim() {
     sudo apt-get update
     sudo apt-get install python-pip
     
+    #install fc-config
+    sudo apt install fontconfig
+    
     # Backup
     cp -f ~/.vimrc ~/.vimrc.old.$(date +%s)
 
