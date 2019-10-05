@@ -26,7 +26,7 @@ filetype plugin indent on
 
 " Syntax highlighting
 syntax enable
-colorscheme molokai
+colorscheme vice
 
 " Ag
 let g:ag_working_path_mode="r"
